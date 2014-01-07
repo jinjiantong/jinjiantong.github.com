@@ -2,12 +2,13 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://jinjiantong.github.com
+title: Lazy man
+subtitle: My dream is no longer write program.
+author: 金建彤
 simple_search: http://google.com/search
 description:
+subscribe_rss:  /atom.xml
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -68,9 +69,6 @@ github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
-# Twitter
-twitter_user:
-twitter_tweet_button: true
 
 # Google +1
 google_plus_one: false
@@ -98,3 +96,5 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+duoshuo_show_comment_count: true
