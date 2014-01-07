@@ -4,7 +4,7 @@
   <title><![CDATA[Lazy man]]></title>
   <link href="http://jinjiantong.github.com/atom.xml" rel="self"/>
   <link href="http://jinjiantong.github.com/"/>
-  <updated>2014-01-07T19:01:34+08:00</updated>
+  <updated>2014-01-07T23:56:48+08:00</updated>
   <id>http://jinjiantong.github.com/</id>
   <author>
     <name><![CDATA[金建彤]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[开始我的旅程]]></title>
+    <link href="http://jinjiantong.github.com/blog/2014/01/07/kai-shi-wo-de-lu-cheng/"/>
+    <updated>2014-01-07T23:54:50+08:00</updated>
+    <id>http://jinjiantong.github.com/blog/2014/01/07/kai-shi-wo-de-lu-cheng</id>
+    <content type="html"><![CDATA[<p>曾经说不能没有我的你，现在在哪里？</p>
+]]></content>
+  </entry>
   
 </feed>
