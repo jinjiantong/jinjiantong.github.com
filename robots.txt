@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://jinjiantong.github.io/sitemap.xml 
+Sitemap: http://jinjiantong.github.com/sitemap.xml 
