@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>开始我的旅程 - Lazy man</title>
+  <title>UITextField 实时搜索 - Lazy man</title>
   <meta name="author" content="金建彤">
 
   
-  <meta name="description" content="曾经说不能没有我的你，现在在哪里？
-">
+  <meta name="description" content="项目的需求 UITextField 根据用户输入实时搜索，当用户连续输入的时候就不查询数据库，这些根据用户输入的时间间隔来判断。 [_keyTF addTarget:self action:@selector(searchBeginClick:) forControlEvents: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jinjiantong.github.com/blog/2014/01/07/kai-shi-wo-de-lu-cheng">
+  <link rel="canonical" href="http://jinjiantong.github.com/blog/2014/01/24/uitextfield-shi-shi-sou-suo">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Lazy man" type="application/atom+xml">
@@ -71,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">开始我的旅程</h1>
+      <h1 class="entry-title">UITextField 实时搜索</h1>
     
     
       <p class="meta">
@@ -87,7 +86,7 @@
   
 
 
-<time datetime="2014-01-07T23:54:50+08:00" pubdate data-updated="true">Jan 7<span>th</span>, 2014</time>
+<time datetime="2014-01-24T17:52:23+08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2014</time>
         
         
         
@@ -96,7 +95,28 @@
   </header>
 
 
-<div class="entry-content"><p>曾经说不能没有我的你，现在在哪里？</p>
+<div class="entry-content"><p>项目的需求 UITextField 根据用户输入实时搜索，当用户连续输入的时候就不查询数据库，这些根据用户输入的时间间隔来判断。</p>
+
+<p>[_keyTF addTarget:self action:@selector(searchBeginClick:) forControlEvents:UIControlEventEditingChanged];</p>
+
+<ul>
+<li><p>(void) searchBeginClick:(id)sender
+{</p>
+
+<p>  [self.class cancelPreviousPerformRequestsWithTarget:self selector:@selector(updateData) object:self];</p>
+
+<p>  [self  performSelector:@selector(updateData) withObject:self afterDelay:0.5];</p></li>
+</ul>
+
+
+<p>}</p>
+
+<p>&ndash;(void)updateData
+{
+  //查询数据库
+}</p>
+
+<p>在这里时间间隔为0.5秒，也可以作为参数提取出来自定义时间间隔。</p>
 </div>
 
 
@@ -119,7 +139,7 @@
   
 
 
-<time datetime="2014-01-07T23:54:50+08:00" pubdate data-updated="true">Jan 7<span>th</span>, 2014</time>
+<time datetime="2014-01-24T17:52:23+08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2014</time>
       
 
 
@@ -153,8 +173,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/01/14/wei-xin-ding-yue-hao-iosbo-wen-jing-xuan/" title="Previous Post: 微信订阅号:ios博文精选">&laquo; 微信订阅号:ios博文精选</a>
       
-        <a class="basic-alignment right" href="/blog/2014/01/14/wei-xin-ding-yue-hao-iosbo-wen-jing-xuan/" title="Next Post: 微信订阅号:ios博文精选">微信订阅号:ios博文精选 &raquo;</a>
       
     </p>
   </footer>
